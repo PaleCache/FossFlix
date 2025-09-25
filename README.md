@@ -3,6 +3,7 @@
 A Jellyfin theme I made because… why not make things look a little cooler? 😎
 
 ## ℹ️ Info
+- ⚠️ Only made and tested on 1920 x 1080 screens all others may have bugs
 - 🎨 Custom background & branding
 - 🍿 Movie & TV previews now feel more like Netflix
 - ✨ Overall UI improvements for a cleaner look
