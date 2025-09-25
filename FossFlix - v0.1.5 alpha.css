@@ -438,7 +438,7 @@ a.MuiButtonBase-root.MuiListItemButton-root.MuiListItemButton-gutters.Mui-select
 
 
 .css-17c09up.Mui-selected {
-  background-image: url(https://i.ibb.co/CtVNDxX/FOSSFLIX.png);
+  background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX.png);
   background-size: 34px;
   background-repeat: no-repeat;
   background-position: right;
@@ -448,7 +448,7 @@ a.MuiButtonBase-root.MuiListItemButton-root.MuiListItemButton-gutters.Mui-select
 
 .sliderBubble {
   box-shadow: 0 0 5px 4px #e50914;
-  background-image: url(https://i.ibb.co/CtVNDxX/FOSSFLIX.png);
+  background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX.png);
   background-size: 40px;
   background-repeat: no-repeat;
   background-position: top;
@@ -623,7 +623,7 @@ display:none;
 
 .backgroundContainer {
   background-color: rgba(0, 0, 0, 0);
-  background-image: url('https://i.ibb.co/vjp1mNc/FOSSFLIX-WALL.jpg');
+  background-image: url('https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX-WALL.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -702,7 +702,7 @@ display:none;
 
 /*Logo*/
 .pageTitleWithDefaultLogo {
-  background-image: url("https://i.ibb.co/CtVNDxX/FOSSFLIX.png");
+  background-image: url("https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX.png");
   background-size: contain;
   background-size: 40% auto;
 }
@@ -714,7 +714,7 @@ display:none;
   --deftraback: #e5091480 !important;
   --rounding: 3px;
   --accent: #e50914;
-  background-image: url(https://i.ibb.co/CtVNDxX/FOSSFLIX.png);
+  background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX.png);
   font-size: medium;
 }
 
@@ -731,7 +731,7 @@ display:none;
 }
 
 .MuiBox-root css-1j3tjfb{
-  src: "https://i.ibb.co/CtVNDxX/FOSSFLIX.png"
+  src: "https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX.png"
 
 }
 
@@ -751,7 +751,7 @@ display:none;
 }
 
 a.lnkMediaFolder.navMenuOption.emby-button:hover {
-  background-image: url(https://i.ibb.co/CtVNDxX/FOSSFLIX.png);
+  background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX.png);
   background-size: 34px;
   background-repeat: no-repeat;
   background-position: right;
@@ -904,7 +904,7 @@ body:not(.withSectionTabs) > .skinHeader {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
   font-size: smaller;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.75), transparent);
-  --background-image: url(https://i.ibb.co/CtVNDxX/FOSSFLIX.png);
+  --background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX.png);
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: 159px;
@@ -917,7 +917,7 @@ body:not(.withSectionTabs) > .skinHeader {
 /*Spinner Fix Again*/
 .mdl-spinner__layer-1 {
   border-color: #e50914;
-  --background-image: url(https://i.ibb.co/CtVNDxX/FOSSFLIX.png);
+  --background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX.png);
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: 59px;
@@ -925,7 +925,7 @@ body:not(.withSectionTabs) > .skinHeader {
 }
 .mdl-spinner__layer-2 {
   border-color: #e50914;
-  --background-image: url(https://i.ibb.co/CtVNDxX/FOSSFLIX.png);
+  --background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX.png);
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: 59px;
@@ -934,7 +934,7 @@ body:not(.withSectionTabs) > .skinHeader {
 }
 .mdl-spinner__layer-3 {
   border-color: #e50914;
-  --background-image: url(https://i.ibb.co/CtVNDxX/FOSSFLIX.png);
+  --background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX.png);
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: 59px;
@@ -942,7 +942,7 @@ body:not(.withSectionTabs) > .skinHeader {
 }
 .mdl-spinner__layer-4 {
   border-color: #e50914;
-  --background-image: url(https://i.ibb.co/CtVNDxX/FOSSFLIX.png);
+  --background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX.png);
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: 59px;
@@ -1029,7 +1029,7 @@ div#itemBackdrop {
 
 
 .layout-mobile .pageTitleWithDefaultLogo {
-  background-image: url("https://i.ibb.co/CtVNDxX/FOSSFLIX.png");
+  background-image: url("https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX.png");
   background-size: contain;
   background-size: 90% auto;
 }
@@ -2650,7 +2650,7 @@ h2 {
   padding: 0;
   will-change: transform, opacity;
   box-shadow: 0 0 5px 4px #e50914;
-  background-image: url(https://i.ibb.co/CtVNDxX/FOSSFLIX.png);
+  background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX.png);
   background-size: 41px;
   background-repeat: no-repeat;
   background-position: top;
