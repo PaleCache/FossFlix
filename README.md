@@ -20,3 +20,29 @@ A Jellyfin theme I made because… why not make things look a little cooler? �
 
 ## 🧑‍💻 Developer
 - PaleCache
+
+## 🖼 Previews
+
+### Homepage
+![Homepage Preview](https://gitlab.com/PaleCache/fossflix/-/raw/main/Previews/Homepage.png)
+
+### Loading Icon
+![Homepage Preview](https://gitlab.com/PaleCache/fossflix/-/raw/main/Previews/LoadingIcon.png)
+
+### Movie Previews
+![Homepage Preview](https://gitlab.com/PaleCache/fossflix/-/raw/main/Previews/MoviePreviews.png)
+
+### Movies Page
+![Homepage Preview](https://gitlab.com/PaleCache/fossflix/-/raw/main/Previews/MoviesPage.png)
+
+### Tv Show Episode Previews
+![Homepage Preview](https://gitlab.com/PaleCache/fossflix/-/raw/main/Previews/TvShowEpisodePreviews.png)
+
+### Tv Show Preview
+![Homepage Preview](https://gitlab.com/PaleCache/fossflix/-/raw/main/Previews/TvShowPreviews.png)
+
+### Video Player
+![Homepage Preview](https://gitlab.com/PaleCache/fossflix/-/raw/main/Previews/VideoPlayer.png)
+
+### Video Player Settings
+![Homepage Preview](https://gitlab.com/PaleCache/fossflix/-/raw/main/Previews/VideoPlayerSettings.png)
