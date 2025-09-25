@@ -8,15 +8,17 @@ A Jellyfin theme I made because… why not make things look a little cooler? �
 - ✨ Overall UI improvements for a cleaner look
 
 ## ⚡ How to Apply
-1. Copy all the code from `fossflix.css`
-2. Log in to an **admin account** on Jellyfin
-3. Go to **Dashboard → General**
-4. Scroll to the **Custom CSS code** section
-5. Paste the code and click **Save**
+1. Log in to an **admin account** on Jellyfin
+2. Go to **Dashboard → General**
+3. Scroll to the **Custom CSS code** section
+4. Paste this line and save:  
+
+   ```css
+   @import url("https://cdn.jsdelivr.net/gh/PaleCache/FossFlix@main/FossFlix.v0.1.5.alpha.css");
 6. 🔄 Refresh the page to see your new theme
 
 ## 🧾 Version
-- v0.1.5a
+- v0.1.5 alpha (Things may be subject to change)
 
 ## 🧑‍💻 Developer
 - PaleCache
