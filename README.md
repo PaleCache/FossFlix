@@ -15,6 +15,7 @@ A Jellyfin theme I made because… why not make things look a little cooler? �
 
    ```css
    @import url("https://cdn.jsdelivr.net/gh/PaleCache/FossFlix@main/FossFlix.v0.1.5.alpha.css");
+   
 6. 🔄 Refresh the page to see your new theme
 
 ## 🧾 Version
