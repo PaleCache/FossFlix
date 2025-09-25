@@ -1,14 +1,35 @@
-/*---FossFlix-A-Netflix-Like-Theme-For-Jellyfin-Alpha-v0.1.4-Made-With-❤️-By-PaleCache-----*/
+/*---FossFlix-A-Netflix-Like-Theme-For-Jellyfin-Alpha-v0.1.5-Made-With-❤️-By-PaleCache-----*/
 
-.mainDetailButtons {
-  -webkit-align-items: center;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex
-  ;
-  margin: 1em 0;
-  top: -24px;
+h2#guestCastHeader {
+  right: -33px;
   position: relative;
+}
+
+h2.sectionTitle.sectionTitle-cards.padded-right {
+  right: -5px;
+  position: relative;
+}
+
+h2.sectionTitle.sectionTitle-cards.padded-left {
+  right: -4px;
+  position: relative;
+}
+
+
+#itemDetailPage .vertical-list {
+display: grid
+;
+grid-template-columns: repeat(5, 1fr);
+padding: 0;
+height: -webkit-fit-content;
+height: -moz-fit-content;
+height: fit-content;
+justify-content: space-evenly;
+-webkit-box-orient: horizontal;
+margin: -6px;
+width: 100%;
+left: 36px;
+position: relative;
 }
 
 
@@ -22,7 +43,7 @@ div:not(.sectionTitleContainer-cards)>.sectionTitle-cards {
   margin: 0;
   padding-bottom: .2em;
   padding-top: .5em;
-  right: 0px;
+  right: -36px;
   position: relative;
 }
 
@@ -566,7 +587,7 @@ left: 0;
 width: 100%;
 height: 100%;
 background: rgba(0, 0, 0, 72%);
-z-index: 1; /* ensure it covers background but is behind content */
+z-index: 1;
 pointer-events: none;
 }
 
@@ -594,7 +615,7 @@ display:none;
 
 
 .osdTimeText:before {
-  content: "FossFlix - A Netflix Like Theme For Jellyfin - v0.1.4a - Made With ♥️ By: PaleCache";
+  content: "FossFlix - A Netflix Like Theme For Jellyfin - v0.1.5a - Made With ♥️ By: PaleCache";
   position: absolute;
   right: 745px;
 }
@@ -770,6 +791,38 @@ opacity: 1;
   height: fit-content;
 }
 
+
+button.btnNextChapter.autoSize.paper-icon-button-light {
+  box-shadow: 0 0 5px 4px #e50914;
+  font-size: 10px;
+  background-color: black;
+}
+
+button.btnPreviousChapter.autoSize.paper-icon-button-light {
+  box-shadow: 0 0 5px 4px #e50914;
+  font-size: 10px;
+  background-color: black;
+}
+
+.card {
+  background: none !important;
+  background-color: #070707fa !important;
+  border: 0;
+  color: inherit !important;
+  display: block;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  contain: layout style;
+  cursor: pointer;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0;
+  font-weight: inherit !important;
+  outline: none !important;
+}
 
 #itemDetailPage
 button.cardImageContainer.coveredImage.cardContent.itemAction.lazy.blurhashed.lazy-image-fadein-fast {
@@ -973,19 +1026,6 @@ div#itemBackdrop {
 }
 
 
-.detailPagePrimaryContent {
-  position: relative;
-  width: 60vw;
-  background: transparent;
-  min-height: 25vh;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  text-shadow: 1px 1px 5px rgb(20, 20, 20);
-  padding: 0 !important;
-  font-size: 1.3em;
-  left: 2%;
-}
 
 
 .layout-mobile .pageTitleWithDefaultLogo {
@@ -2046,11 +2086,7 @@ a.show-focus[is="emby-linkbutton"]:focus
   z-index: -1;
 }
 
-.homeLibraryButton,
-.card:hover,
-.card:focus {
-  background-color: #101010 !important;
-}
+
 
 .layout-tv .vertical-wrap .card::before {
   transform: none !important;
@@ -2167,8 +2203,9 @@ transition: 0.2s;
 }
 
 .raised {
-  background: var(--accent) !important;
+  background: #f3000c !important;
   border-radius: var(--rounding) !important;
+  box-shadow: 0 0 5px 4px #000000;
 }
 
 .mediaInfoItem {
@@ -2218,11 +2255,207 @@ div#divRunningTasks {
 
 /*LOGO FOR INFO PAGE MOVIES / SHOWS*/
 
-.detailLogo {
-  display: none;
+button.button-flat.detailButton.emby-button:hover {
+  box-shadow: 0 0 5px 4px #e50914;
+  color: #e50914 !important;
+}
+
+.infoWrapper {
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+  max-width: 100%;
+  min-width: 0;
+  top: -24px;
+  position: relative;
+}
+
+.mainDetailButtons {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  margin: 1em 0;
+  top: 163px;
+  position: absolute;
+  left: -60px;
+  padding: 1em 2em;
+  font-size: 1.2em;
 }
 
 
+
+.selectContainer.selectVideoContainer.trackSelectionFieldContainer.flex-shrink-zero {
+  display: none;
+}
+
+.selectContainer.selectAudioContainer.trackSelectionFieldContainer.flex-shrink-zero {
+  display: none;
+}
+
+.itemTags.focuscontainer-x {
+  display: none;
+}
+
+.itemExternalLinks.focuscontainer-x {
+  display: none;
+}
+
+.itemDetailsGroup {
+  display: none;
+}
+
+button.button-flat.btnPlay.detailButton.emby-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 5px;
+  border-radius: 11px !important;
+  background-color: #6f626259;
+  color: #ffffff;
+  font-size: 14px !important;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 8px !important;
+}
+
+
+
+button.button-flat.btnPlayTrailer.detailButton.emby-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 5px;
+  border-radius: 11px !important;
+  background-color: #6f626259;
+  color: #ffffff;
+  font-size: 14px !important;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 8px !important;
+}
+
+
+
+
+
+
+
+button.button-flat.btnPlaystate.detailButton.emby-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(111, 98, 98, 0.35);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px !important;
+  margin-right: 8px !important;
+  padding: 1px 5px;
+  border-radius: 11px !important;
+}
+
+
+
+button.button-flat.btnUserRating.detailButton.emby-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 5px;
+  border-radius: 11px !important;
+  background-color: #6f626259;
+  color: #ffffff;
+  font-size: 14px !important;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 8px !important;
+}
+
+
+
+
+button.button-flat.btnMoreCommands.detailButton.emby-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 5px;
+  border-radius: 11px !important;
+  background-color: #6f626259;
+  color: #ffffff;
+  font-size: 14px !important;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 8px !important;
+}
+
+button.button-flat.btnShuffle.detailButton.emby-button {
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 5px;
+  border-radius: 11px !important;
+  background-color: #6f626259;
+  color: #ffffff;
+  font-size: 14px !important;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 8px !important;
+
+}
+
+
+.detailSection {
+  left: 43px;
+  position: relative;
+}
+
+
+h3.itemName.infoText.subtitle {
+  left: 26px;
+  position: relative;
+}
+
+button.button-flat.btnReplay.detailButton.emby-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1px 5px;
+  border-radius: 11px !important;
+  background-color: #6f626259;
+  color: #ffffff;
+  font-size: 14px !important;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 8px !important;
+}
+
+
+
+.detailLogo {
+  /* display: none; */
+  position: relative;
+  left: 35px;
+  top: 204px;
+  width: 240px;
+  height: 151px;
+}
+
+.itemName {
+  font-weight: 600;
+  /*margin: .5em 0;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px !important;
+  /* display: none; */
+}
 
 
 
@@ -2260,13 +2493,13 @@ div#divRunningTasks {
   top: 30px;
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
-  width: fit-content !important;
+  width: 881px !important;
   background: transparent;
   font-size: 20px;
   max-width: 95%;
   margin-top: 14vh;
   padding: 0 !important;
-  height: 20vh;
+  height: 31vh;
   font-size: 169%;
   left: 2%;
 }
@@ -2522,6 +2755,7 @@ h2 {
 .cardFooter .cardText {
   opacity: 1;
 }
+
 
 /*Episode stuff*/
 
@@ -2941,4 +3175,4 @@ div:not(.paperList) .listItem {
   border-color: var(--accent);
 }
 
-/*------------FossFlix-A-Netflix-Like-Theme-For-Jellyfin-Alpha-v0.1.4a-Made-With-❤️-By-PaleCache-----------*/
+/*------------FossFlix-A-Netflix-Like-Theme-For-Jellyfin-Alpha-v0.1.5a-Made-With-❤️-By-PaleCache-----------*/
