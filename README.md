@@ -12,10 +12,14 @@ A Jellyfin theme I made because… why not make things look a little cooler? �
 1. Log in to an **admin account** on Jellyfin
 2. Go to **Dashboard → General**
 3. Scroll to the **Custom CSS code** section
-4. Paste this line and save:  
+4. Choose Version, paste the import line and save:  
 
    ```css
-   @import url("https://cdn.jsdelivr.net/gh/PaleCache/FossFlix@main/FossFlix.v0.1.5.alpha.css");
+   Default Version
+   @import url("https://cdn.jsdelivr.net/gh/PaleCache/FossFlix@main/FossFlix.default.alpha.css");
+
+   Halloween Version
+   @import url("https://cdn.jsdelivr.net/gh/PaleCache/FossFlix@main/FossFlix.halloween.alpha.css");
    
 6. 🔄 Refresh the page to see your new theme
 
