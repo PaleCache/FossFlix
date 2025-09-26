@@ -836,7 +836,7 @@ button.btnPreviousChapter.autoSize.paper-icon-button-light {
   font-weight: inherit !important;
   outline: none !important;
   text-align: center !important;
-  background-image: url(https://imgs.search.brave.com/DGLEMxZlCyKNIGyhkGVGjtdnnylIO-CqXXmFikmJP4s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTI3/OTE3ODk4NS92ZWN0/b3Ivc3BpZGVyLXdl/Yi1iYW5uZXItd2l0/aC1zcGlkZXJzLWFu/ZC1iYXRzLWhhbmdp/bmctY29id2ViLWJh/Y2tncm91bmQtY29w/eS1zcGFjZS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9NUxL/QlhPQ1BudjFHSGtC/OHhILXhXY0RHV1BK/VjJ2cmpPMEZQR2J5/U3FZND0) !important;
+  background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/spider-web-banner.png) !important;
   background-size: 133% !important;
 
 }
@@ -934,7 +934,7 @@ body:not(.withSectionTabs) > .skinHeader {
 /*Spinner Fix Again*/
 .mdl-spinner__layer-1 {
   border-color: #ED6F23;
-  --background-image: url(https://imgs.search.brave.com/Jf5ixRi47kkzGFPCJcjsZke6Wztux_zAIYjiESTQVaI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMTMvSmFj/ay1PLUxhbnRlcm4t/UE5HLUNsaXBhcnQu/cG5n);
+  --background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/Jack.O.Lantern.png);
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: 59px;
@@ -942,7 +942,7 @@ body:not(.withSectionTabs) > .skinHeader {
 }
 .mdl-spinner__layer-2 {
   border-color: #ED6F23;
-  --background-image: url(https://imgs.search.brave.com/Jf5ixRi47kkzGFPCJcjsZke6Wztux_zAIYjiESTQVaI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMTMvSmFj/ay1PLUxhbnRlcm4t/UE5HLUNsaXBhcnQu/cG5n);
+  --background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/Jack.O.Lantern.png);
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: 59px;
@@ -951,7 +951,7 @@ body:not(.withSectionTabs) > .skinHeader {
 }
 .mdl-spinner__layer-3 {
   border-color: #ED6F23;
-  --background-image: url(https://imgs.search.brave.com/Jf5ixRi47kkzGFPCJcjsZke6Wztux_zAIYjiESTQVaI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMTMvSmFj/ay1PLUxhbnRlcm4t/UE5HLUNsaXBhcnQu/cG5n);
+  --background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/Jack.O.Lantern.png);
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: 59px;
@@ -959,7 +959,7 @@ body:not(.withSectionTabs) > .skinHeader {
 }
 .mdl-spinner__layer-4 {
   border-color: #ED6F23;
-  --background-image: url(https://imgs.search.brave.com/Jf5ixRi47kkzGFPCJcjsZke6Wztux_zAIYjiESTQVaI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG5nbWFydC5jb20v/ZmlsZXMvMTMvSmFj/ay1PLUxhbnRlcm4t/UE5HLUNsaXBhcnQu/cG5n);
+  --background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/Jack.O.Lantern.png);
   background-image: var(--background-image);
   background-repeat: no-repeat;
   background-size: 59px;
