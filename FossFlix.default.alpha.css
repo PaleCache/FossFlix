@@ -1,5 +1,19 @@
 /*---FossFlix-A-Netflix-Like-Theme-For-Jellyfin-Alpha-v0.1.5-Made-With-❤️-By-PaleCache-----*/
 
+div[data-role=controlgroup] a.ui-btn-active {
+  background: #e50914 !important;
+  color: #292929 !important;
+}
+
+.css-1ip8vbj.Mui-selected {
+  background-color: #e50914;
+}
+
+.css-1ip8vbj.Mui-selected:hover {
+  background-color: #e50914;
+}
+
+
 .playbackProgress>div {
     background-color: #e50914;
     z-index: 1000;

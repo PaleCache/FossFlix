@@ -1,6 +1,19 @@
 /*---FossFlix-A-Netflix-Like-Theme-For-Jellyfin-Alpha-v0.1.5-Made-With-❤️-By-PaleCache-----*/
 
 
+div[data-role=controlgroup] a.ui-btn-active {
+  background: #ed6f23 !important;
+  color: #292929 !important;
+}
+
+.css-1ip8vbj.Mui-selected {
+  background-color: #ed6f23;
+}
+
+.css-1ip8vbj.Mui-selected:hover {
+  background-color: #ed6f23;
+}
+
 .playbackProgress>div {
     background-color: #ED6F23;
     z-index: 1000;
@@ -528,7 +541,7 @@ a.MuiButtonBase-root.MuiListItemButton-root.MuiListItemButton-gutters.Mui-select
 
 /*Change countdown next eps text red*/
 .upNextDialog-countdownText {
-  color: rgb(255, 0, 0);
+  color: #ED6F23;
 }
 .noBackdropTransparency .detailPageSecondaryContainer {
   background-color: rgb(0, 0, 0, 0);
