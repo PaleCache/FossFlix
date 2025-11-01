@@ -1,4 +1,5 @@
-/*---FossFlix-A-Netflix-Like-Theme-For-Jellyfin-Alpha-v0.1.5-Made-With-❤️-By-PaleCache-----*/
+/*---FossFlix-A-Netflix-Like-Theme-For-Jellyfin-Alpha-v0.1.6a-Made-With-❤️-By-PaleCache-----*/
+
 
 div[data-role=controlgroup] a.ui-btn-active {
   background: #e50914 !important;
@@ -13,11 +14,13 @@ div[data-role=controlgroup] a.ui-btn-active {
   background-color: #e50914;
 }
 
-
 .playbackProgress>div {
     background-color: #e50914;
     z-index: 1000;
 }
+
+
+
 
 
 h2#guestCastHeader {
@@ -25,32 +28,10 @@ h2#guestCastHeader {
   position: relative;
 }
 
-h2.sectionTitle.sectionTitle-cards.padded-right {
-  right: -5px;
-  position: relative;
-}
-
-h2.sectionTitle.sectionTitle-cards.padded-left {
-  right: -4px;
-  position: relative;
-}
 
 
-#itemDetailPage .vertical-list {
-display: grid
-;
-grid-template-columns: repeat(5, 1fr);
-padding: 0;
-height: -webkit-fit-content;
-height: -moz-fit-content;
-height: fit-content;
-justify-content: space-evenly;
--webkit-box-orient: horizontal;
-margin: -6px;
-width: 100%;
-left: 36px;
-position: relative;
-}
+
+
 
 
 .childrenItemsContainer.itemsContainer.padded-right.vertical-wrap {
@@ -59,12 +40,12 @@ position: relative;
 }
 
 
-div:not(.sectionTitleContainer-cards)>.sectionTitle-cards {
-  margin: 0;
-  padding-bottom: .2em;
-  padding-top: .5em;
-  right: -36px;
-  position: relative;
+h2#peopleHeader {
+    margin: 0;
+    padding-bottom: .2em;
+    padding-top: .5em;
+    right: -36px;
+    position: relative;
 }
 
 div#guestCastContent {
@@ -111,11 +92,7 @@ div#castContent {
 }
 
 
-#peopleHeader {
-/* display: none; */
-right: -38px;
-position: relative;
-}
+
 
 /*Move scenes and more from pos*/
 .verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container {
@@ -157,14 +134,7 @@ div#scenesCollapsible:before {
   }
 }
 
-/*FIXES JELLYFINS MISTAKES ON DETAILS PAGE*/
-#itemDetailPage > div.detailPageWrapperContainer > div.detailPageSecondaryContainer.padded-bottom-page > div > div.verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container > div.emby-scrollbuttons.padded-right > button:nth-child(1) > span:nth-child(1){
-display: none;
-}
 
-#itemDetailPage > div.detailPageWrapperContainer > div.detailPageSecondaryContainer.padded-bottom-page > div > div.verticalSection.detailVerticalSection.moreFromSeasonSection.emby-scroller-container > div.emby-scrollbuttons.padded-right > button:nth-child(2) > span{
-display:none;
-}
 .upNextDialog {
   box-shadow: 0 0 8px 5px black;
   box-shadow: 0 0 5px 4px #e50914;
@@ -300,11 +270,7 @@ button.btnPreviousChapter.autoSize.paper-icon-button-light:hover {
 
 
 
-.itemDetailPage .scrollSlider.focuscontainer-x.itemsContainer.animatedScrollX {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-auto-rows: 1fr;
-}
+
 
 
 
@@ -533,18 +499,21 @@ a.MuiButtonBase-root.MuiListItemButton-root.MuiListItemButton-gutters.Mui-select
   box-shadow: 0 0 5px 4px #e50914;
 }
 
+
+
 /*Change countdown next eps text red*/
 .upNextDialog-countdownText {
-  color: rgb(255, 0, 0);
+  color: #e50914;
 }
 .noBackdropTransparency .detailPageSecondaryContainer {
   background-color: rgb(0, 0, 0, 0);
-  margin-top: 89px;
+  margin-top: -354px;
 }
 /*blur of show/movie background image*/
 .backgroundContainer.withBackdrop {
   background-color: rgba(0, 0, 0, 0.6);
 }
+
 /*Fix seasons info and shit move it left*/
 
 [dir="ltr"] .detailPageContent {
@@ -556,6 +525,15 @@ a.MuiButtonBase-root.MuiListItemButton-root.MuiListItemButton-gutters.Mui-select
   position: absolute;
   left: 0;
 }
+
+
+.itemsContainer.padded-right.vertical-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+
 
 /*Remove My media*/
 
@@ -599,17 +577,7 @@ a.MuiButtonBase-root.MuiListItemButton-root.MuiListItemButton-gutters.Mui-select
 
 
 
-#itemBackdrop::after {
-content: "";
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 72%);
-z-index: 1;
-pointer-events: none;
-}
+
 
 .mdl-slider::-moz-range-thumb {
   background-color: #e50914;
@@ -635,7 +603,7 @@ display:none;
 
 
 .osdTimeText:before {
-  content: "FossFlix - A Netflix Like Theme For Jellyfin - v0.1.5a - Made With ♥️ By: PaleCache";
+  content: "FossFlix - A Netflix Like Theme For Jellyfin - v0.1.6a - Made With ❤️ By: PaleCache";
   position: absolute;
   right: 745px;
 }
@@ -731,7 +699,7 @@ display:none;
 
 /*MOVIE PREVIEW BEFORE ACTUAL IMAGE LOADS*/
 :root {
-  --deftraback: #e5091480 !important;
+  --deftraback: #e50914 !important;
   --rounding: 3px;
   --accent: #e50914;
   background-image: url(https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX.png);
@@ -842,6 +810,9 @@ button.btnPreviousChapter.autoSize.paper-icon-button-light {
   flex-shrink: 0;
   font-weight: inherit !important;
   outline: none !important;
+  text-align: center !important;
+  background-size: 133% !important;
+
 }
 
 #itemDetailPage
@@ -1032,18 +1003,6 @@ button.emby-tab-button.emby-button.emby-tab-button-active:hover {
 /*Theming Title Page*/
 
 
-div#itemBackdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-position: top right;
-  background-size: cover;
-  background-attachment: scroll;
-  z-index: 0;
-  pointer-events: none;
-}
 
 
 
@@ -1103,11 +1062,7 @@ margin-top: 0 !important;
 }
 
 @media (orientation: landscape) {
-  .layout-mobile
-  .detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-    flex-flow: row;
-    width: 100% !important;
-  }
+
   .layout-mobile .mainDetailButtons {
     margin: 0 5vh;
     width: 50vw !important;
@@ -1149,7 +1104,24 @@ margin-top: 0 !important;
   background: transparent;
 }
 
+.noBackdropTransparency .detailPageSecondaryContainer {
+  background-color: rgb(0, 0, 0, 0);
+  margin-top: -407px;
+  height: 659px;
+}
 
+.itemBackdrop {
+  -webkit-animation: backdrop-fadein .8s
+  ease-in normal both;
+  animation: backdrop-fadein .8s
+  ease-in normal both;
+  background-attachment: fixed;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 36vh;
+  position: relative;
+}
 .layout-tv div#itemBackdrop {
   width: 100vw;
   height: 100vh !important;
@@ -1195,13 +1167,7 @@ margin-top: 0 !important;
   }
 }
 
-.detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-  font-size: smaller;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  overflow: hidden;
-}
+
 
 .layout-mobile .detailPageSecondaryContainer {
   margin: 0;
@@ -1213,13 +1179,7 @@ margin-top: 0 !important;
   z-index: 0;
 }
 
-.layout-mobile .detailPagePrimaryContainer {
-  z-index: -1;
-  background: transparent !important;
-  height: 100vh !important;
-  width: 100vw !important;
-  padding: 0 !important;
-}
+
 
 .layout-mobile .primaryImageWrapper {
   flex: 0 0 auto;
@@ -1335,15 +1295,7 @@ margin-top: 0 !important;
   display: none;
 }
 
-.layout-mobile
-.detailPagePrimaryContainer.padded-left.padded-right.detailRibbon {
-  font-size: 120%;
-  justify-content: flex-start;
-  align-content: flex-end;
-  margin-top: 0 !important;
-  height: 100vh !important;
-  z-index: 1;
-}
+
 
 .layout-mobile .detailPageWrapperContainer > * {
   z-index: 1;
@@ -2008,24 +1960,7 @@ label.selectLabel {
 .layout-tv .listItem::after,
 .layout-tv .raised::after,
 
-.layout-tv #itemDetailPage .emby-button::after {
-  box-sizing: border-box;
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  border: 3px solid white;
-  transform: translateY(100%);
-  visibility: hidden;
-  z-index: 1000;
-  will-change: transform;
-  transition: all 0.275s;
-  border-radius: 10px;
-}
+
 
 .layout-tv .raised::after {
   transition: transform 0.275s, visiblity 0s 0.275s;
@@ -2223,7 +2158,7 @@ transition: 0.2s;
 }
 
 .raised {
-  background: #f3000c !important;
+  background: #e50914 !important;
   border-radius: var(--rounding) !important;
   box-shadow: 0 0 5px 4px #000000;
 }
@@ -2280,27 +2215,16 @@ button.button-flat.detailButton.emby-button:hover {
   color: #e50914 !important;
 }
 
-.infoWrapper {
-  -webkit-flex: 1 0 0;
-  flex: 1 0 0;
-  max-width: 100%;
-  min-width: 0;
-  top: -24px;
-  position: relative;
+.noBackdropTransparency .detailPagePrimaryContainer, .noBackdropTransparency .detailPageSecondaryContainer {
+  background-color: #101010b5;
 }
 
-.mainDetailButtons {
-  -webkit-align-items: center;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  margin: 1em 0;
-  top: 163px;
-  position: absolute;
-  left: -60px;
-  padding: 1em 2em;
-  font-size: 1.2em;
+.detailPagePrimaryContainer {
+  position: relative;
+  top: -407px;
 }
+
+
 
 
 
@@ -2430,10 +2354,6 @@ button.button-flat.btnShuffle.detailButton.emby-button {
 }
 
 
-.detailSection {
-  left: 43px;
-  position: relative;
-}
 
 
 h3.itemName.infoText.subtitle {
@@ -2456,16 +2376,39 @@ button.button-flat.btnReplay.detailButton.emby-button {
   margin-right: 8px !important;
 }
 
-
-
-.detailLogo {
-  /* display: none; */
-  position: relative;
-  left: 35px;
-  top: 204px;
-  width: 240px;
-  height: 151px;
+.layout-desktop [dir=ltr] .detailRibbon, .layout-tv [dir=ltr] .detailRibbon {
+  padding-left: 32.45vw;
+  display: contents;
 }
+
+.infoWrapper {
+  -webkit-flex: 1 0 0;
+  flex: 1 0 0;
+  max-width: 100%;
+  min-width: 0;
+  left: 39px;
+  position: relative;
+  padding-top: 8%;
+}
+
+
+.mainDetailButtons {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex
+  ;
+  margin: 1em 0;
+  left: 31px;
+  position: relative;
+}
+
+[dir=ltr] .detailPagePrimaryContent {
+  padding-left: 1.45vw;
+  padding-right: 2%;
+}
+
+
 
 .itemName {
   font-weight: 600;
@@ -2508,29 +2451,8 @@ button.button-flat.btnReplay.detailButton.emby-button {
   min-height: fit-content !important;
 }
 
-.layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer, .layout-desktop #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
-  position: relative;
-  top: 30px;
-  width: -webkit-fit-content !important;
-  width: -moz-fit-content !important;
-  width: 881px !important;
-  background: transparent;
-  font-size: 20px;
-  max-width: 95%;
-  margin-top: 14vh;
-  padding: 0 !important;
-  height: 31vh;
-  font-size: 169%;
-  left: 2%;
-}
 
-.layout-tv #itemDetailPage:not(.noBackdrop) .detailPagePrimaryContainer {
-  width: 95vw !important;
-  margin-top: 10vh;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
+
 
 .detailImageContainer .card {
   display: none;
@@ -2787,18 +2709,7 @@ h2 {
   padding-left: 5px;
 }
 
-#itemDetailPage .vertical-list {
-display: grid;
-grid-template-columns: repeat(5, 1fr);
-padding: 0;
-height: -webkit-fit-content;
-height: -moz-fit-content;
-height: fit-content;
-justify-content: space-evenly;
--webkit-box-orient: horizontal;
-margin: -6px;
-width: 100%;
-}
+
 
 /*SCROLLER BUTTONS*/
 .emby-scrollbuttons-button>.material-icons {
@@ -3195,4 +3106,4 @@ div:not(.paperList) .listItem {
   border-color: var(--accent);
 }
 
-/*------------FossFlix-A-Netflix-Like-Theme-For-Jellyfin-Alpha-v0.1.5a-Made-With-❤️-By-PaleCache-----------*/
+/*------------FossFlix-A-Netflix-Like-Theme-For-Jellyfin-Alpha-v0.1.6a-Made-With-❤️-By-PaleCache-----------*/
