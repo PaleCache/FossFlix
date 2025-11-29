@@ -20,6 +20,9 @@ A Jellyfin theme I made because… why not make things look a little cooler? �
 
    Halloween Version
    @import url("https://cdn.jsdelivr.net/gh/PaleCache/FossFlix@main/FossFlix.halloween.alpha.css");
+
+   Christmas Version
+   @import url("https://cdn.jsdelivr.net/gh/PaleCache/FossFlix@main/FossFlix.christmas.alpha.css");
    
 6. 🔄 Refresh the page to see your new theme
 
