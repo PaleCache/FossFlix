@@ -204,7 +204,6 @@ button.btnPreviousChapter.autoSize.paper-icon-button-light:hover {
   align-items: center;
   border: none;
   border-radius: 100px;
-  bottom: 18%;
   box-shadow: 7px 6px 15px -14px rgba(0, 0, 0, .65);
   color: silver;
   cursor: pointer;
@@ -214,9 +213,6 @@ button.btnPreviousChapter.autoSize.paper-icon-button-light:hover {
   font-size: 1.2em;
   font-weight: 700;
   gap: 3px;
-  padding: 12px 20px;
-  position: fixed;
-  right: -12%;
   transition: opacity .2s ease-out;
   z-index: 10000;
   background-color: black;
@@ -227,25 +223,21 @@ button.btnPreviousChapter.autoSize.paper-icon-button-light:hover {
 /*SKIP BUTTON WHEN HOVERING OVER IT*/
 .skip-button:hover {
   align-items: center;
-  bottom: 18%;
-  color: rgb(229, 9, 20);
+  color: #ED6F23;
   cursor: pointer;
   display: flex
   ;
   font-size: 1.2em;
   font-weight: 700;
-  position: fixed;
-  right: -12%;
   z-index: 10000;
   background-color: black;
-  box-shadow: rgb(229, 9, 20) 0px 0px 5px 4px;
+  box-shadow: #ED6F23 0px 0px 5px 4px;
   border-width: initial;
   border-style: none;
   border-color: initial;
   border-image: initial;
   border-radius: 100px;
   gap: 3px;
-  padding: 12px 20px;
   transition: opacity 0.2s ease-out;
 }
 
