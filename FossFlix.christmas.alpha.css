@@ -1,64 +1,18 @@
-/*---FossFlix-A-Netflix-Like-Theme-For-Jellyfin-Alpha-v0.1.6a-Made-With-❤️-By-PaleCache-----*/
+/*---FossFlix-A-Netflix-Like-Theme-For-Jellyfin-Alpha-v0.1.7a-Made-With-❤️-By-PaleCache-----*/
 
 
-
-
-
-
-
-
-.headerLeft::after {
-    content: '';
-    position: fixed; /* Fixed to the viewport */
-    top: 20%;
-    left: -200px;
-    width: 150px;
-    height: 100px;
-    background-image: url('https://gitlab.com/PaleCache/fossflix/-/raw/main/santa.gif');
-    background-size: contain;
-    background-repeat: no-repeat;
-    pointer-events: none;
-    animation: flyAcross 30s linear infinite, randomText 10s steps(1) infinite;
-    font-family: "Netflix Sans";
-    font-weight: 900;
-    opacity: 0.6;
-      content: "Merry Christmas From FossFlix!";
-      position: fixed;
-      bottom: 10px;
-      left: 80%;
-      transform: translateX(-50%);
-      font-size: 7px;
+/* Selected item in the library dropdown (Movies, Suggestions, etc.) */
+.MuiMenuItem-root.Mui-selected,
+.MuiMenuItem-root.Mui-selected:hover,
+.MuiMenuItem-root.Mui-selected.Mui-focusVisible {
+  background-color: var(--accent, #e50914) !important;
+  color: #fff !important;
 }
 
 
-@keyframes randomText {
-    5% { content: "Merry Christmas From FossFlix!"; }
-    25% { content: "Privacy Is A Basic Human Right!"; }
-    50% { content: "Jellyfin > Plex LOL"; }
-    75% { content: "Netflix Taking L's Since 2017!"; }
+.MuiMenuItem-root:hover {
+  background-color: var(--accent, #e50914) !important;
 }
-
-
-
-/* Animation to change the text */
-@keyframes randomColors {
-    0% { box-shadow: 0 0 5px 4px silver; }
-    20% { box-shadow: 0 0 5px 4px green;; }
-    45% { box-shadow: 0 0 5px 4px #e50914; }
-    65% { box-shadow: 0 0 5px 4px gold; }
-    85% { box-shadow: 0 0 5px 4px blue; }
-}
-
-@keyframes flyAcross {
-    from {
-        left: -200px; /* Start off-screen */
-    }
-    to {
-        left: 110%; /* End off-screen */
-    }
-}
-
-
 
 
 div[data-role=controlgroup] a.ui-btn-active {
@@ -75,16 +29,88 @@ div[data-role=controlgroup] a.ui-btn-active {
 }
 
 .playbackProgress>div {
-    background-color: #C30F16;
-    z-index: 1000;
+  background-color: #C30F16;
+  z-index: 1000;
+}
+
+
+.itemBackdrop {
+  -webkit-animation: backdrop-fadein .8s ease-in normal both;
+  animation: backdrop-fadein .8s ease-in normal both;
+  background-attachment: fixed;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 36vh;
+  position: relative;
+  background-color: #10101099 !important;
+}
+
+.noBackdropTransparency .detailPageWrapperContainer {
+  background-attachment: fixed;
+  background-color: #10101099 !important;
+  background-color: #10101099 !important;
+  background-image: none;
+  background-image: var(--jf-palette-background-defaultImage,none);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.css-1u7mpsp {
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: var(--Paper-shadow);
+  background-image: var(--Paper-overlay);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  position: fixed;
+  z-index: var(--jf-zIndex-appBar);
+  top: 0px;
+  left: auto;
+  right: 0px;
+  --AppBar-background: transparent;
+  --AppBar-color: inherit;
+  background-color: #10101099 !important;
+  color: var(--jf-palette-text-primary);
+  border-bottom: 1px solid #10101000;
+}
+
+:root { --ff-overlay: rgba(16, 16, 16, 0.6); }
+
+
+.MuiButtonGroup-root .MuiButton-containedPrimary {
+  background-color:rgba(0, 0, 0, 0.0) !important;
+  color: #fff !important;
+}
+
+.MuiButtonGroup-root .MuiButton-containedPrimary:hover {
+  background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+.MuiButtonGroup-contained .MuiButtonGroup-grouped:not(:last-of-type) {
+  border-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+* {
+  --variant-textColor: #C30F16 !important;
+}
+
+.vertical-wrap .portraitCard {
+  width: 160px !important;
 }
 
 .cardTextCentered, .cardTextCentered>.textActionButton {
-    text-align: center !important;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(https://gitlab.com/PaleCache/fossflix/-/raw/main/snowflakes.webp);
-    background-size: cover;
-    background-repeat: repeat;
+  text-align: center !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6)), url(https://gitlab.com/PaleCache/fossflix/-/raw/main/snowflakes.webp);
+  background-size: cover;
+  background-repeat: repeat;
 }
+
+
+
 
 
 
@@ -94,11 +120,6 @@ h2#guestCastHeader {
 }
 
 
-
-
-
-
-
 .childrenItemsContainer.itemsContainer.padded-right.vertical-wrap {
   right: -28px;
   position: relative;
@@ -106,11 +127,11 @@ h2#guestCastHeader {
 
 
 h2#peopleHeader {
-    margin: 0;
-    padding-bottom: .2em;
-    padding-top: .5em;
-    right: -36px;
-    position: relative;
+  margin: 0;
+  padding-bottom: .2em;
+  padding-top: .5em;
+  right: -36px;
+  position: relative;
 }
 
 div#guestCastContent {
@@ -169,11 +190,11 @@ div#scenesCollapsible {
   right: -29px;
 }
 
-
+/* Hide any existing "Scenes" text in #scenesCollapsible child elements */
 #scenesCollapsible .sectionTitle,
 #scenesCollapsible h2,
 #scenesCollapsible span {
-display: none !important;
+display: none !important; /* Hides default text like "Scenes" */
 }
 
 div#scenesCollapsible:before {
@@ -183,6 +204,7 @@ div#scenesCollapsible:before {
   margin-bottom: 1rem;
   font-family: "Netflix Sans", sans-serif;
   font-size: 1.6em;
+  /* color: var(--accent); */
   text-shadow: 0 0 5px rgb(20, 20, 20);
   z-index: 10;
   right: -4px;
@@ -269,11 +291,11 @@ button.btnPreviousChapter.autoSize.paper-icon-button-light:hover {
   color: silver;
   cursor: pointer;
   display: -webkit-flex;
-  display: flex
-  ;
+  display: flex;
   font-size: 1.2em;
   font-weight: 700;
   gap: 3px;
+
   transition: opacity .2s ease-out;
   z-index: 10000;
   background-color: black;
@@ -284,20 +306,19 @@ button.btnPreviousChapter.autoSize.paper-icon-button-light:hover {
 /*SKIP BUTTON WHEN HOVERING OVER IT*/
 .skip-button:hover {
   align-items: center;
-  color: rgb(229, 9, 20);
+  color: #C30F16;
   cursor: pointer;
   display: flex;
   font-size: 1.2em;
   font-weight: 700;
   z-index: 10000;
   background-color: black;
-  box-shadow: rgb(229, 9, 20) 0px 0px 5px 4px;
+  box-shadow: #C30F16 0px 0px 5px 4px;
   border-width: initial;
   border-style: none;
   border-color: initial;
   border-image: initial;
   border-radius: 100px;
-  gap: 3px;
   transition: opacity 0.2s ease-out;
 }
 
@@ -658,7 +679,7 @@ display:none;
 
 
 .osdTimeText:before {
-  content: "FossFlix - A Netflix Like Theme For Jellyfin - v0.1.6a - Made With ❤️ By: PaleCache";
+  content: "FossFlix - A Netflix Like Theme For Jellyfin - v0.1.7a - Made With ❤️ By: PaleCache";
   position: absolute;
   right: 745px;
 }
@@ -681,6 +702,58 @@ display:none;
 }
 
 
+.headerLeft::after {
+  content: '';
+  position: fixed;
+  top: 20%;
+  left: -200px;
+  width: 150px;
+  height: 100px;
+
+  background-image: url('https://gitlab.com/PaleCache/fossflix/-/raw/main/santa.gif');
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  animation: flyAcross 30s linear infinite, randomText 10s steps(1) infinite;
+  font-family: "Netflix Sans";
+  font-weight: 900;
+  opacity: 0.6;
+  content: "Merry Christmas From FossFlix!";
+  position: fixed;
+  bottom: 10px;
+  left: 80%;
+  transform: translateX(-50%);
+  font-size: 7px;
+}
+
+
+/* Animation to change the text */
+@keyframes randomText {
+  5% { content: "Merry Christmas From FossFlix!"; }
+  25% { content: "Privacy Is A Basic Human Right!"; }
+  50% { content: "Jellyfin > Plex LOL"; }
+  75% { content: "Netflix Taking L's Since 2017!"; }
+}
+
+
+
+/* Animation to change the text */
+@keyframes randomColors {
+  0% { box-shadow: 0 0 5px 4px silver; }
+  20% { box-shadow: 0 0 5px 4px green;; }
+  45% { box-shadow: 0 0 5px 4px #e50914; }
+  65% { box-shadow: 0 0 5px 4px gold; }
+  85% { box-shadow: 0 0 5px 4px blue; }
+}
+
+@keyframes flyAcross {
+  from {
+    left: -200px; /* Start off-screen */
+  }
+  to {
+    left: 110%; /* End off-screen */
+  }
+}
 
 
 
@@ -693,11 +766,18 @@ display:none;
 }
 
 /*Logo*/
-.pageTitleWithDefaultLogo {
-  background-image: url("https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX-CHRISTMAS.png");
-  background-size: contain;
-  background-size: 37% auto;
+
+.MuiButton-iconSizeLarge img {
+  content: url("https://gitlab.com/PaleCache/fossflix/-/raw/main/FOSSFLIX-CHRISTMAS.png");
+  max-height: 1.75em !important;
+  max-width: none !important;
 }
+
+
+.MuiButton-root:has(> .MuiButton-iconSizeLarge) {
+  font-size: 0 !important;
+}
+
 
 
 
@@ -2220,9 +2300,6 @@ button.button-flat.detailButton.emby-button:hover {
   color: #C30F16 !important;
 }
 
-.noBackdropTransparency .detailPagePrimaryContainer, .noBackdropTransparency .detailPageSecondaryContainer {
-  background-color: #101010b5;
-}
 
 .detailPagePrimaryContainer {
   position: relative;
@@ -3110,5 +3187,51 @@ div:not(.paperList) .listItem {
 .mdl-spinner__layer.mdl-spinner__layer-4.mdl-spinner__layer-4-active {
   border-color: var(--accent);
 }
+/* Gap fix: Pull secondary content up closer + remove excess padding/margin on detail page */
+.detailPagePrimaryContainer {
+  position: relative !important;
+  top: -29vh !important;
+  margin-bottom: -15vh !important;
+  z-index: 2 !important;
+  margin-left: 4% !important;
+}
 
-/*------------FossFlix-A-Netflix-Like-Theme-For-Jellyfin-Alpha-v0.1.6a-Made-With-❤️-By-PaleCache-----------*/
+.detailPageSecondaryContainer.padded-bottom-page {
+  margin-top: -10vh !important;    /* Main gap killer - start negative to overlap slightly with primary */
+  padding-top: 2vh !important;     /* Tiny padding so content doesn't touch poster edge */
+  background: transparent !important; /* If it has bg, make sure it blends */
+}
+
+.detailPageContent {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.verticalSection.detailVerticalSection {
+  margin-top: 0 !important;        /* No extra space above cast/scenes/chapters */
+  padding-top: 1em !important;
+}
+
+/* Fine-tune for smaller screens so it doesn't crush */
+@media (max-width: 1100px) {
+  .detailPagePrimaryContainer {
+    top: -15vh !important;
+    margin-bottom: -10vh !important;
+  }
+  .detailPageSecondaryContainer.padded-bottom-page {
+    margin-top: -8vh !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .detailPagePrimaryContainer {
+    top: -10vh !important;
+    margin-bottom: -5vh !important;
+  }
+  .detailPageSecondaryContainer.padded-bottom-page {
+    margin-top: -5vh !important;
+    padding-top: 1vh !important;
+  }
+}
+
+/*------------FossFlix-A-Netflix-Like-Theme-For-Jellyfin-Alpha-v0.1.7a-Made-With-❤️-By-PaleCache-----------*/
