@@ -27,7 +27,7 @@ A Jellyfin theme I made because… why not make things look a little cooler? �
 6. 🔄 Refresh the page to see your new theme
 
 ## 🧾 Version
-- v0.1.6 alpha (Things may be subject to change)
+- v0.1.7 alpha (Things may be subject to change)
 
 ## 🧑‍💻 Developer
 - PaleCache
